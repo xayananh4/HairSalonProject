@@ -5,10 +5,10 @@
 @model HairSalon.Models.Stylist
 @using HairSalon.Models
 
-<h2>Details Page:</h2>
+<h2>Stylist Details Page:</h2>
 <hr />
-<h3>There @Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)<h3>
-<h3>There @Html.DisplayNameFor(model => model.Detail): @Html.DisplayFor(model => model.Detail)<h3>
+<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)<h3>
+<h3>@Html.DisplayNameFor(model => model.Detail): @Html.DisplayFor(model => model.Detail)<h3>
 
 @if (@Model.Clients.Count == 0)
 {
@@ -16,7 +16,7 @@
 } 
 else
 {
-  <h3>Clients:</h3>
+  <h3>clients for this stylist:</h3>
   <ul>
     @foreach (Client client in Model.Clients)
     {
@@ -26,6 +26,4 @@ else
   </ul>
 }
 <p>@Html.ActionLink("Add a client to this stylist", "Create","Clients")</p>
-<p>@Html.ActionLink("Edit this Stylist", "Edit", new { id = Model.StylistId })</p>
-<p>@Html.ActionLink("Delete this Stylist", "Delete", new { id = Model.StylistId })</p>
 <p>@Html.ActionLink("Back to list of stylists", "Index")</p>
