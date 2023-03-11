@@ -24,20 +24,29 @@ namespace HairSalon.Controllers
     }
     public ActionResult Create()
     {
+      ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
       return View();
     }
+
 
     [HttpPost]
     public ActionResult Create(Client client)
     {
+      if (client.CuisineId == 0)
+      {
+        return RedirectToAction("Create");
+      }
       _db.Clients.Add(client);
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
     public ActionResult Details(int id)
     {
-      Client thisClient = _db.Clients.FirstOrDefault(client => client.ClientId == id);
+      Client thisClient = _db.Clients
+      .Include(client => client.Stylist)
+      .FirstOrDefault(client => client.ClientId == id);
       return View(thisClient);
+
     }
   }
 }
