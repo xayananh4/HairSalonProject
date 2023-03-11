@@ -32,7 +32,7 @@ namespace HairSalon.Controllers
     [HttpPost]
     public ActionResult Create(Client client)
     {
-      if (client.CuisineId == 0)
+      if (client.StylistId == 0)
       {
         return RedirectToAction("Create");
       }
