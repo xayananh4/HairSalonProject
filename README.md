@@ -23,7 +23,7 @@ MVC Web application that allows the owner(Claire) to add a stylist to a list and
 * [YOUR-DB-NAME]: database included in project
 * [YOUR-USER-HERE]: with your username
 * [YOUR-PASSWORD-HERE]: with your password
-* Add appsettings.json file to .gitignore
+* Add appsettings.json file to .gitignore to protect the sensitive data
 * To view web application. Run commands: dotnet watch run 
 * Open the browser, go to https://localhost:5001
 
