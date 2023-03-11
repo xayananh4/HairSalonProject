@@ -33,4 +33,4 @@ No bugs
 ## License
 
 [MIT](https://opensource.org/licenses/MIT)  
-Copyright (c) _03/03/2023_ _viradeth xay-ananh_
+Copyright (c) _03/10/2023_ _viradeth xay-ananh_
