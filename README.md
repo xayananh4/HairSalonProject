@@ -17,8 +17,14 @@ MVC Web application that allows the owner(Claire) to add a stylist to a list and
 # Complete setup/Installation instructions:
 * Clone repository to your desktop 
 * CD to the Directory: HairSalon 
+* Connect to database, While in the current directory(HairSalon)  
 * Create appsettings.json file ![example for appsettings file](image.png)
-* Run commands: dotnet watch run (to view web application)
+* Replace the following values: 
+* [YOUR-DB-NAME]: vira_xay_ananh.sql
+* [YOUR-USER-HERE]: with your username
+* [YOUR-PASSWORD-HERE]: with your password
+* Add appsettings.json file to .gitignore
+* To view web application. Run commands: dotnet watch run 
 * Open the browser, go to https://localhost:5001
 
 # Known bugs: 
