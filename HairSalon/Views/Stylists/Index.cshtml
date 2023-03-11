@@ -4,7 +4,7 @@
 
 @using HairSalon.Models;
 
-<h1>Stylists</h1>
+<h2>Stylists</h2>
 
 <ul>
   @foreach (Stylist stylist in Model)
@@ -14,5 +14,5 @@
 </ul>
 
 
-<p>@Html.ActionLink("Add new a new stylist", "Create")</p>
-<p>@Html.ActionLink("Back To Home Page", "Index", "Home")</p>
+<p>@Html.ActionLink("Add a new stylist to this application", "Create")</p>
+<p>@Html.ActionLink("Go back to the home page", "Index", "Home")</p>
