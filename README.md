@@ -1,4 +1,4 @@
-# Pierre Bakery
+# Eau Claire's Salon
 
 
 # Description 
